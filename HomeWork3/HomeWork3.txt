@@ -1,0 +1,12 @@
+//Locators
+Title - [data-testid="cs-new-request-title"] input[name="title"]
+Description - [data-testid="cs-new-request-description"] textarea[name="description"]
+Date of Request - [data-testid="cs-new-request-date"] input[name="dateOfRequest"]
+Category - [data-testid="cs-new-request-category"] input[name="category"]
+Priority "Low" - [data-testid="cs-new-request-priority"] input[value="LOW"]
+Priority "Medium" - [data-testid="cs-new-request-priority"] input[value="MEDIUM"]
+Priority "High" - [data-testid="cs-new-request-priority"] input[value="HIGH"]
+Priority "Urgent" - [data-testid="cs-new-request-priority"] input[value="URGENT"]
+Cancel button - [data-testid="cs-new-request-wizard-cancel"]
+Next button - [data-testid="cs-new-request-wizard-next"]
+Back button - [data-testid="cs-new-request-wizard-back"]
