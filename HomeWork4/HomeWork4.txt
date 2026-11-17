@@ -1,0 +1,112 @@
+//GET request
+Request URL
+http://localhost:3001/api/v1/testing-flags/active
+Request method
+GET
+Status code
+200 OK
+
+//POST request
+Request URL
+http://localhost:3001/api/v1/requests
+Request method
+POST
+Status code
+201 Created
+
+//Get again
+Request URL
+http://localhost:3001/api/v1/testing-flags/active
+Request method
+GET
+Status code
+200 OK
+
+//Get authetication
+Request URL
+http://localhost:3001/api/v1/auth/me
+Request method
+GET
+Status code
+200 OK
+
+//Get request for the page
+Request URL
+http://localhost:3001/api/v1/requests?page=1&size=10&sort=id%3Adesc
+Request method
+GET
+Status code
+200 OK
+
+//Error 401
+Request URL
+http://localhost:3001/api/v1/requests?page=1&size=25&sort=id%3Adesc&showAll=true
+Request method
+GET
+Status code
+401 Unauthorized
+
+//Error 404
+Request URL
+http://localhost:3001/api/v1/requests/67c29075-e206-43c3-a443-dc875d425d80555
+Request method
+GET
+Status code
+404 Not Found
+
+//Error 5xx - simulated by the application for the Server errors.
+
+//Elements in My Requests after the API call - all the elements in the table with the Requests:
+{
+            "id": "ba8b713c-3fd9-4bf8-952e-74ad5b3a6ddb",
+            "code": "SR-2024-00019",
+            "title": "Dark alley needs lighting at 193 Krum Popov Street",
+            "description": "No lighting in pedestrian alley, crime concern Location: 193 Krum Popov Street, Lozenets, Sofia. Reported on 9/11/2026.",
+            "category": "public-safety",
+            "priority": "LOW",
+            "status": "SUBMITTED",
+            "dateOfRequest": "2026-09-11T06:36:51.444Z",
+            "streetAddress": "193 Krum Popov Street",
+            "city": "Sofia",
+            "postalCode": null,
+            "locationText": "193 Krum Popov Street, Lozenets, Sofia",
+            "landmark": null,
+            "accessInstructions": null,
+            "lat": 42.69389293488266,
+            "lng": 23.31513951396028,
+            "contactMethod": null,
+            "email": "john@example.com",
+            "phone": "+359888123456",
+            "alternatePhone": null,
+            "bestTimeToContact": null,
+            "mailingStreetAddress": null,
+            "mailingCity": null,
+            "mailingPostalCode": null,
+            "issueType": null,
+            "severity": null,
+            "isRecurring": false,
+            "isEmergency": false,
+            "hasPermits": false,
+            "affectedServices": null,
+            "estimatedValue": null,
+            "additionalContacts": null,
+            "satisfactionRating": null,
+            "formComments": null,
+            "agreesToTerms": true,
+            "wantsUpdates": true,
+            "preferredDate": null,
+            "preferredTime": null,
+            "createdBy": "63a7b9a6-80d4-4d97-ba81-6ee6aa10d640",
+            "assignedTo": null,
+            "departmentId": "bd8ce345-8529-4750-80cd-30495769ccc0",
+            "version": 1,
+            "slaDueAt": null,
+            "closedAt": null,
+            "reopenUntil": null,
+            "createdAt": "2026-09-11T06:36:51.444Z",
+            "updatedAt": "2026-09-11T06:36:51.444Z",
+            "creator": {
+                "id": "63a7b9a6-80d4-4d97-ba81-6ee6aa10d640",
+                "name": "John Doe",
+                "email": "john@example.com"
+            },
